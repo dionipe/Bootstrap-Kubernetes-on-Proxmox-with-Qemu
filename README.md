@@ -54,14 +54,16 @@ Declaratively build a 4 node Kubernetes cluster on Proxmox using Ansible and QEM
 ```
 ## Mikrotik Configurations
 
-`
+```javascript
+
 /routing bgp instance set default as=64512 redistribute-connected=yes redistribute-static=yes router-id=192.168.93.254
 /routing bgp peer 
 add multihop=no name=Pluto remote-address=192.168.40.10 remote-as=64513 ttl=default
 add multihop=no name=Ceres remote-address=192.168.40.100 remote-as=64513 ttl=default
 add multihop=no name=Eris remote-address=192.168.40.101 remote-as=64513 ttl=default
 add multihop=no name=Haumea remote-address=192.168.40.102 remote-as=64513 ttl=default
-`
+
+```
 
 ## TODO
 1. Add better support for multi-node Proxmox clusters.
