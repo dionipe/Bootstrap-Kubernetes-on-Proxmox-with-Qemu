@@ -3,6 +3,9 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/dionipe/Bootstrap-Kubernetes-on-Proxmox-with-Qemu/master/ss.png" width="800">
 </p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dionipe/Bootstrap-Kubernetes-on-Proxmox-with-Qemu/master/ss2.png" width="800">
+</p>
 
 ## Summary
 Declaratively build a 4 node Kubernetes cluster on Proxmox using Ansible and QEMU. Optionally enable advanced features including ingress, load balancing, unattended upgrades, the Dashboard, etc.
