@@ -9,6 +9,9 @@
       - name: Waiting for Debian to finish performing automatic updates before continuing.
         script: ../../files/bash_scripts/monitor_automatic_updates_status.sh
 
+      - name: Setting Nameservers 
+        shell: sudo sh -c "echo 'nameserver 192.168.40.1' > /etc/resolv.conf"
+        
       - name: Performing a Package Upgrade.
         become: yes
         apt:
